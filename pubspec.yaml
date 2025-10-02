@@ -1,5 +1,5 @@
 name: login
-description: "A new Flutter package project."
+description: "A login package using Flutter Blocs."
 version: 0.0.1
 homepage:
 

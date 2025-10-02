@@ -11,29 +11,54 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/to/develop-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Flutter Login App
+Authentication app built with Flutter, Supabase, Bloc, and Formz
+
+This project is a login and registration application developed in Flutter. It uses Supabase as the backend for authentication, Bloc for state management, and Formz for reactive form validation.
+
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+* Features
+* Email and password login
+* User registration
+* Reactive form validation
+* State management with Bloc
+* Supabase integration
+* Modern and responsive UI
 
 ## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
-```
+Clone the repository:
+* git clone https://github.com/RogoSanchez/login_package.git
+* cd login_package
+* flutter pub get
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+lib/
+  data/
+    repositories/         # Data access and authentication logic
+  domain/
+    entities/             # Entities and models
+  Presentation/
+    bloc/                 # Login and authentication blocs
+    Screen/               # Main screens
+    widgets/              # Reusable widgets
+
+Technologies Used: 
+- Flutter
+- Supabase
+- flutter_bloc
+- formz
+
+Customization:
+
+Change colors and styles in the presentation files to match your branding.
+You can add Google, Facebook, etc. authentication using Supabase methods.
+
+Contributing:
+Contributions are welcome! Open an issue or pull request for suggestions or improvements.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
