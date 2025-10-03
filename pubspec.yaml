@@ -17,6 +17,9 @@ dependencies:
   freezed: ^3.2.3
   freezed_annotation: ^3.1.0
   supabase_flutter: ^2.10.2
+  app_theme:
+    path: ../app_theme
+  go_router: ^13.2.0 
 
 dev_dependencies:
   flutter_test:

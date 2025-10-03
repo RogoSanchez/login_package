@@ -1,14 +1,16 @@
+import 'package:app_theme/ui/widgets/size_box.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:formz/formz.dart';
+import 'package:go_router/go_router.dart';
 import 'package:login/Presentation/bloc/login_bloc/login_bloc.dart';
 import 'package:login/Presentation/widgets/password_input.dart';
 import 'package:login/Presentation/widgets/login_button.dart';
 import 'package:login/Presentation/widgets/username_input.dart';
 
 class LogIn extends StatelessWidget {
-  LogIn({super.key});
+  LogIn({super.key,});
 
   static const _padding = EdgeInsets.only(right: 50, left: 50);
   static const _titleStyle = TextStyle(
@@ -16,7 +18,6 @@ class LogIn extends StatelessWidget {
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.bold,
   );
-
   final FocusNode _emailFocus = FocusNode();
   final FocusNode _passwordFocus = FocusNode();
 
@@ -62,7 +63,6 @@ class LogIn extends StatelessWidget {
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
                         content: Text('¡Inicio existoso!'),
-                        backgroundColor: Theme.of(context).colorScheme.success,
                       ),
                     );
                   } else if (state.status == FormzSubmissionStatus.failure) {
@@ -97,7 +97,6 @@ class LogIn extends StatelessWidget {
                 width: 300.h,
                 child: ElevatedButton(
                   onPressed: () {
-                    SignInWithGoogle();
                   },
 
                   style: ElevatedButton.styleFrom(
